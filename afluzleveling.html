@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Belajar Html 5</title>
+
+  <style>
+    body {
+      font-family: verdana, sans-serif;
+      font-size: 12px;
+    }
+
+    header,
+    nav,
+    main,
+    aside,
+    footer {
+      border: 1px solid grey;
+      margin: 5px;
+      padding: 5px;
+    }
+
+    main {
+      float: left;
+      width: 60%;
+    }
+
+    aside {
+      float: left;
+      width: 30%;
+    }
+
+    footer {
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1> Belajar Programing</h1>
+    <h2> Bersama Sekolah Koding</h2>
+    <header>
+
+      <nav>
+        <ul>
+          <li><a href="#"> Home</a></li>
+          <li><a href="#">Profil</a></li>
+          <li><a href="#">Kontak<a /></li>
+        </ul>
+      </nav>
+
+      <main>
+        <article>
+
+          <video width="300px" height="300px" controls muted poster="puncak seruni.jpeg">
+            <source src="arifureta.mp4" type="video/mp4">
+          </video>
+
+          <audio controls autoplay loop>
+            <source src="tog.mp3" type="audio/mp3">
+          </audio>
+          <form>
+            <input type="text" name="search">
+            <input id="exit-time" name="exit-time" type="time">
+            <input id="color" name="color" type="color">
+            <input id="startdate" name="startdate" min="2012-01-01" max="2022-01-01" type="date">
+            <input type="email" name="email" required>
+            <input type="submit">
+          </form>
+
+
+
+          <figure>
+            <img src="puncak seruni.jpeg" alt="gambar puncak seruni" width="200" height="200">
+            <figcaption>
+              Gambar di ambil dari puncak gunung seruni
+              <a
+                href="https://travel.detik.com/domestic-destination/d-5346107/7-fakta-gunung-bromo-yang-perlu-diketahui-traveler">kawasan
+                gunung bromo</a>
+            </figcaption>
+          </figure>
+          <dialog open>
+            ini website tutorial sekolah koding
+          </dialog>
+          <details>
+            <summary>
+              info sekolah Koding
+            </summary>
+            <p>selamat datang sekolah ]koding</p>
+          </details>
+
+          <h1>Daftar Pelajaran</h1>
+
+          <section>
+            <h2>HTML</H2>
+            <p> membuat struktur website menggunakan html5</p>
+          </section>
+          <section>
+            <h2>css</h2>
+            <p>menghias website dengan CSS</P>
+          </section>
+          <section>
+            <h2>Javascript</h2>
+            <p>membuat website lebih interaktif dengan javascript</P>
+          </section>
+        </article>
+      </main>
+
+      <aside>
+        <h2>Daftar artikel</h2>
+        <a href="#">Intro html</a><br>
+        <a href="#">Mulai belajar website</a><br>
+        <a href="#">Berguru sampai negeri koding</a>
+      </aside>
+      <footer>
+        <p>&copy; 2020 sekolah koding</p>
+      </footer>
+</body>
+
+</html>
