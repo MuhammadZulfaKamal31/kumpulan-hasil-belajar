@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 {
+            height: 100px;
+            width: 100px;
+            background-color: blanchedalmond;
+            transform: translate(200px, 30px);
+        }
+
+        #div2 {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(140, 143, 168);
+            transform: rotate(30deg);
+            border: 1px solid red;
+        }
+
+        #div3 {
+            width: 100px;
+            background-color: rgb(169, 115, 34);
+            transform: scale(0.7, 0.3)
+        }
+
+        #div4 {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(180, 142, 86);
+            transform: skew(20deg, 20deg);
+        }
+
+        .div-div4 {
+            transform: translate(200px, 30px);
+        }
+
+        /*bagian transition*/
+        div {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            margin-bottom: 5px;
+            transition: width 4s, height 2s, background 2s;
+        }
+
+        #did1:hover {
+            width: 300px;
+        }
+
+        #did2:hover {
+            height: 200px;
+            background: aqua;
+            transition-delay: 1s;
+        }
+
+        #did3:hover {
+            transition-timing-function: ease-in-out;
+            height: 120px;
+        }
+
+        #did4:hover {
+            transition-timing-function: ease-out;
+            height: 300px;
+            border: solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Translete</h1>
+    <div id="div1"></div>
+
+    <h1>Rotate</h1>
+    <p>rotasi x mengecil ke bawah dengan kata lain memmendek tapi lebarnya masih sama, kalau rotasi y panjang masing
+        sama tapi lebar mengecil, imagenya kayak pintu yang beresel di tengah yang memutar</p>
+    <div id="div2"></div>
+
+    <H1>Scale</H1>
+    <div id="div3"></div>
+
+    <h1>Scew</h1>
+    <p>scew terkena efek 3 dimensi makanya bisa jadi seperti itu</p>
+    <div class="div-div4">
+        <h1 id="div4"></h1>
+    </div>
+
+    <h1>Transition</h1>
+    <div class="id_transition">
+        <div id="did1"></div>
+        <div id="did2"></div>
+        <div id="did3"></div>
+        <div id="did4"></div>
+    </div>
+
+
+</body>
+
+</html>

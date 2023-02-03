@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            margin-bottom: 5px;
+            margin-left: 30PX;
+        }
+
+        #div0 {
+            perspective: 90px;
+            perspective-origin: 50% 50%;
+        }
+
+        #div1 {
+            background: red;
+            transform: rotateX(45deg);
+        }
+
+        #div2,
+        #div4 {
+            perspective: 100px;
+            perspective-origin: 60% 10%;
+        }
+
+        #div3 {
+            background: blue;
+            transform: translateZ(1px) rotatex(25deg);
+            transition: transform 2s;
+        }
+
+        #div3:hover {
+            transform: translateZ(17px) rotatex(75deg);
+        }
+
+
+        #div5 {
+            background: yellow;
+            transform: scaleZ(1) rotatey(45deg);
+            transition: transform 2s;
+            border: 1px solid black;
+        }
+
+        #div5:hover {
+            transform: scaleZ(1.5) rotatey(45deg);
+        }
+
+        #div6 {
+            background: rgb(72, 85, 156);
+            transform: scalex(1) rotatey(45deg);
+            transition: transform 2s;
+            border: 1px solid black;
+            margin-top: 60px;
+            color: aliceblue;
+        }
+
+        #div6:hover {
+            transform: scalex(2) rotatey(15deg);
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Perspective</h1>
+    <div id="div0">
+        <div id="div1"></div>
+    </div>
+    <h1>3d translate and rotate</h1>
+    <div id="div2">
+        <div id="div3"></div>
+    </div>
+
+    <h1>Scale</h1>
+    <div id="div4">
+        <div id="div5"> Afluz Leveling</div>
+    </div>
+
+    <div id="div4">
+        <div id="div6"> Afluz Leveling</div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        #div-luar {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            margin: 50px;
+            padding: 10px;
+            border: 1px solid black;
+            perspective: 100px;
+            perspective-origin: 50% 50%;
+        }
+
+        #div-kuning {
+            padding: 50px;
+            position: absolute;
+            border: 2px solid black;
+            background-color: #FAC100;
+            transform: rotateX(45deg);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="div-luar">
+        <div id="div-kuning">Dumet School</div>
+    </div>
+
+</body>
+
+</html>-->

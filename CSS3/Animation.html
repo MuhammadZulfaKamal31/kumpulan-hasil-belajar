@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin-bottom: 500px;
+            margin-left: 50px;
+        }
+
+        @font-face {
+            font-family: sekolah koding;
+            src: url(sansation_light.woff);
+        }
+
+        div {
+            font-family: sekolah koding;
+            height: 150px;
+            width: 150px;
+            background: royalblue;
+            animation-name: goyang;
+            animation-duration: 6s;
+            animation-iteration-count: 43;
+            animation-direction: alternate-reverse;
+            animation-delay: 2s;
+            /*fill: nentuin berhenti di kondisi akhir*/
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in;
+            perspective: 500px;
+        }
+
+        div:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes goyang {
+            25% {
+                background: yellow;
+                width: 200px;
+            }
+
+            25% {
+                background: rgb(139, 238, 114);
+                width: 175px;
+            }
+
+            50% {
+                background: rgb(86, 194, 161);
+                width: 150px;
+            }
+
+            75% {
+                background: rgb(84, 94, 238);
+                width: 125px;
+            }
+
+            100% {
+                background: rgb(207, 42, 163);
+                width: 100px;
+            }
+
+        }
+
+        /* @keyframes goyang {
+            from {
+                background: yellow;
+            }
+
+            to {
+                background: red;
+            }
+        }*/
+    </style>
+</head>
+
+<body>
+
+    <h1>Animasi</h1>
+    <div></div>
+
+</body>
+
+</html>

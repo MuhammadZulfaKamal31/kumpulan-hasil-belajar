@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*entah kenapa di bagian not ini harus di kasih spasi, padahal di bagian hover gak*/
+        body :not(h1) {
+            color: red;
+        }
+
+        p:first-child {
+            color: blue;
+        }
+
+        p:last-child {
+            font-size: 40px;
+        }
+
+        p:only-child {
+            background: yellow;
+        }
+
+        ul :nth-child(2) {
+            text-decoration: line-through;
+        }
+
+        ul :nth-child(odd) {
+            text-decoration: underline;
+        }
+
+        ul :nth-child(even) {
+            text-decoration: line-through;
+        }
+
+        ul :nth-child(3n+0) {
+            text-decoration: overline;
+            background: blue;
+        }
+
+        input:checked {
+            width: 60px;
+        }
+
+        input:enabled {
+            border: 2px solid blue;
+            color: black;
+        }
+
+        input:disabled {
+            border: 2px solid red;
+        }
+
+        input:invalid {
+            background: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Selektor Pseudo Classis</h1>
+    <div>
+        <p> Paragraph pertama</p>
+    </div>
+
+    <div>
+        <span>span pertama</span>
+        <p> Paragraph Pertama</p>
+    </div>
+
+    <div>
+        <p>Paragraf Pertama</p>
+        <p>Paragraf Kedua</p>
+        <p>Paragraf Ketiga</p>
+    </div>
+
+    <h1> Nth Child</h1>
+    <ul>
+        <li> List Pertama</li>
+        <li> List Kedua</li>
+        <li> List Ketiga</li>
+        <li> List Keempat</li>
+        <li> List Kelima</li>
+        <li> List Keenam</li>
+        <li> List Ketujuh</li>
+
+    </ul>
+
+    <h1>input</h1>
+    <input type="checkbox">Male
+    <input type="checkbox">Female
+    <br><br>
+
+    <input type=" text" placeholder="nama lengkap">
+    <input type="text" placeholder=" nama pendek">
+    <input type="text" placeholder="kota asal" disabled>
+    <input type="email" placeholder="email">
+
+</body>
+
+</html>
