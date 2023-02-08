@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            height: 350px;
+            width: 300px;
+        }
+
+        #wrap {
+            background-color: black;
+            color: white;
+            font-size: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <img src="java.png" alt="">
+
+    <div id="wrap"></div>
+
+
+    <script>
+        //Deklarasi Variable
+        //-----------------------
+        //Nama di mulai dengan huruf atau $ atau _
+        //Nama boleh mengandung huruf, angka, underscore _ dan $ dollar
+        //Nama itu case sensitive
+        //ada 'reserved words' yang tidak boleh di pakai
+
+        //tipe data string
+        var x = "Afluz Leveling 123456";
+        var x2 = " yang baru";
+        var angka = 1000;
+        var angka2 = 123.1234123;
+
+        //1.memilih id wrap 2. metode innerHTML= nulis Konten
+        //deklarasi variable
+        //operator matematika
+        // angka_baru++;//increment
+        // angka--;//decrement
+
+        //angka2 = angka2 + angka;+
+        // angka2 += angka; 
+
+        //-----metode number-----
+        // toFixed(n) toString() rondom() min(a,b,c) max(a,b,c)
+        //  var angka_baru = angka2.toFixed(12);  
+
+        //round()ceil()floor() ObjectMethods(contoh:abs, log) r
+        //random spesific formula -->Math.floor(Math.random)*x)+1;
+        //var x = 10;//jarak maksimal
+        //var y = 5;//jarak minimal
+        //var angka_baru = Math.floor(Math.random() * x) + y;
+
+        //-----Mode String----
+        //length indexOf LastIndexof search chartAt
+        //toUpperCase() to LowerCase() repalce
+        //substring(start, end), substr(start, Length)
+
+        var nama = "120.7";
+        var hasil = parseFloat(nama) + 27;
+
+        document.getElementById("wrap").innerHTML = hasil;
+    </script>
+</body>
+
+</html>

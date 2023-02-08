@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 300px;
+            width: 250px;
+        }
+
+        #wrap {
+            background-color: black;
+            color: white;
+            font-size: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <img src="java.png">
+    <div id="wrap"></div>
+
+    <script>
+        //fungsi
+        //tidak terjadi apa apa karena kita baru menuliskan fungsinya     
+        // function prinText() {
+        //   alert("Selamat datang!")
+        // var x = "Sekolah Koding"
+        //document.getElementById("wrap").innerHTML = x;}
+        //memanggil fungsinya
+        //prinText();
+
+        //function prinText(nama, nama2) {
+        //secara tidak langsung nama=afluz leveling seperti mendeklarasikan
+        //  var text = nama2 + " yang baru"
+        //document.getElementById("wrap").innerHTML = text;
+        //}
+        //prinText("Afluz Leveling", "123")
+
+        //return pada javascript
+        //function prinText(angka, angka2) {
+
+        //  return angka + angka2;}
+        //var x = prinText(24, 20) + " yang baru";
+        //document.getElementById("wrap").innerHTML = x;
+
+        //(4) di javascrpt
+        //global var & local var
+        var text2 = "Afluz Leveling";
+        function prinText(sayang) {
+            //local var
+            //global var
+            return sayang;
+        }
+        var prinText = prinText("Mutiara")
+        document.getElementById('wrap').innerHTML = prinText;
+    </script>
+</body>
+
+</html>
