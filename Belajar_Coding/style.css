@@ -1,0 +1,197 @@
+
+body{
+  /*
+  background-color: #a2f1f4;
+  background-image: url("virginsoul_logo.jpg");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position: bottom;
+ */
+ background:#a2f1f4 url("virginsoul_logo.jpg") no-repeat fixed bottom;
+}
+h1{
+ color: blue;
+ text-align:center;
+ text-decoration: underline;
+ display: inline;
+}
+h2{
+  text-align: center;
+  text-transform: uppercase;
+  display: inline;
+}
+#text_pendek{
+  font-size: 22px;
+  font-family: fantasy;
+  font-weight:bolder;
+  background:yellow;
+  width:50%;
+  height:200;
+  max-width:30%;
+  max-height:100px;
+  /*visibility: hidden;*/
+  display: none
+}
+#text_panjang{
+  text-align: justify;
+  text-indent: 30px;
+  letter-spacing: 2px;
+  line-height: 20px
+  ;
+}
+
+/*kondisi biasa*/
+#menu_wrap{
+/*  margin-left: 50px;
+  margin-bottom: 50px;
+  margin: top right bottom left;*/
+ margin: 10px 0px 70px 20px;
+}
+*{
+  /*margin:0;*/
+}
+
+.menu:link{
+  background:grey;
+  color: white;
+}
+
+/*kondisi setelah di kunjungi*/
+.menu{
+  display: inline-block;
+  /*height: 30px;
+  width :100px;*/
+  text-decoration:none;
+  text-align: center;
+  /*border-width:1px;
+  border-style: solid;
+  border-color: black;*/
+  border: 1px solid black;
+  padding: 10px 10px;
+
+}
+.menu:visited{
+background:yellow;
+}
+
+/*kondisi hover-mouse berada diatasanya*/
+.menu:hover{
+  background:green;
+}
+
+/*sedang di klik*/
+.menu:active{
+  background: red;
+}
+/*
+/*mengataur posisi di css*/
+/* 1. satatic 2. relative 3. absolute 4. fixed */
+/*
+.menu_member{
+  position: absolute;
+  top: 150px;
+  left: 30px;
+}
+
+#parent_h1{
+  position: relative;
+  top: 100px;
+}
+/*psisi absolute itu tergantung pada parentnya*/
+/*
+#h1_member{
+  background: red;
+  position: absolute;
+  top: 100px;
+  left:40px;
+  z-index: -3;
+}
+
+#parent_h2{
+  position:
+  top:100px;
+}
+/*posisi fixed tergantung pada browsernya*/
+/*
+#h2_member{
+  background: yellow;
+  position: fixed;
+  top: 100px;
+  left:40px;
+  z-index: -4;
+}*/
+
+
+table{
+  float: left;
+  margin-right: : 20px;
+
+}
+
+#div_baru{
+  clear:both;
+}
+
+ul, ol, dl{
+  float:left;
+  margin: 0px;
+  padding: 0px;
+  width: 30%;
+}
+#id_copyright{
+  text-align: left;
+  clear: both;
+}
+
+/*bagian kontak html*/
+#table_kontak{
+  clear: both;
+  position: static;
+  right: 20%;
+}
+
+h1, h2{
+  color: green;
+  margin: 10px;
+}
+/*div a{
+  background: yellow;
+}*/
+
+/*langsung di bawah parent*/
+div > a{
+  background: yellow;
+}
+p + div{
+  background: blue;
+}
+/* semua bagian yang ada di bawahnya*/
+div ~ p{
+  background-color: red;
+}
+
+/*
+HOVER
+keadaan ketika mouse berada pada elemen tertentu
+1. diri sendiri
+2. elemen lain:
+     > langsung di dalam
+     + langsung setelah
+     (space) berada di suatu tempat (dalam kontainer)
+
+*/
+h1:hover{
+  color: black;
+}
+h1:hover + h2{
+  color: white;
+}
+
+/*
+ FOCUS
+ keadaan ketika input di klik
+ */
+
+ input:focus, textarea:focus{
+   background: yellow;
+ }
