@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style media="screen">
+        Body {
+            margin: 15% 15%;
+            font-family: sans-serif;
+        }
+
+        .id {
+
+            border: 1px solid black;
+            width: 250px;
+            margin: auto;
+            text-align: center;
+        }
+
+        #wrap {
+            height: 350px;
+            width: 350px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #info {
+            background: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            top: 0px;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            padding-top: 30%;
+            color: white;
+            font-size: 20px;
+        }
+
+        #info span {
+            display: block;
+        }
+
+        #wrap img {
+            height: auto;
+            width: 350px;
+        }
+
+        a {
+            border: 1px solid white;
+            display: block;
+            width: 100px;
+            text-decoration: none;
+            color: white;
+            border-radius: 7px;
+            margin: auto;
+        }
+
+        a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        #wrap #info {
+            display: none;
+        }
+
+        #wrap:hover #info {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS TIPS</h1>
+    <div id="wrap">
+        <img src="baju.jpeg">
+        <div id="info">
+            <p>Baju Biru Keren <span> 2500,-Rp</span></p>
+            <a href="#">Belanja</a>
+        </div>
+    </div>
+    <br><br>
+    <p>cara gunakan margin auto itu harus ada witdh kalau gak ada gak bisa, cocok di gunakan untuk membuat tombol tengah
+    </p>
+    <p class="id">uji coba</p>
+
+</body>
+
+</html>
