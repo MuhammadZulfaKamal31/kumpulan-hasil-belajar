@@ -1,0 +1,43 @@
+body {
+    background-color: aqua;
+}
+
+#menu {
+    column-count: 3;
+    column-gap: 30px;
+    break-inside: 1px;
+}
+
+h1 {
+    column-span: all;
+}
+
+.tracks {
+    background: white;
+    height: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 80px;
+    break-inside: avoid-column;
+}
+
+.tracks:nth-child(3) {
+    height: 300px;
+}
+
+.tracks:nth-child(5) {
+    height: 50px;
+}
+
+
+@media only screen and (max-width:1024px) {
+    #menu {
+        column-count: 2;
+    }
+}
+
+@media only screen and (max-width:760px) {
+    #menu {
+        column-count: 1;
+    }
+}
