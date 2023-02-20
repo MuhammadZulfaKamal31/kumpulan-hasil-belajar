@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Video Playlist</title>
+</head>
+
+<body>
+    <h1>Custom Video Playlist</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/knUMag0Iu0g" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <div onclick="prev()">
+        << Prev</div>
+            <div onclick="next()"> Next >></div>
+
+            <script>
+                let videos = ["knUMag0Iu0g", "8CNbrEBrAtA", "sAuEeM_6zpk", "0YF8vecQWYs", "IwQGnXpskoY"]
+                let currentOrder = 0
+                let maxVideo = videos.length - 1
+
+                function next() {
+                    currentOrder = (currentOrder == maxVideo) ? maxVideo : currentOrder + 1
+                    changeVideo()
+                }
+                function prev() {
+                    currentOrder = (currentOrder == 0) ? 0 : currentOrder - 1
+                    changeVideo()
+                }
+                function changeVideo() {
+                    document.querySelector('iframe')
+                        .setAttribute('src', 'https://www.youtube.com/embed/' + videos[currentOrder])
+                }
+
+
+            </script>
+</body>
+
+</html>

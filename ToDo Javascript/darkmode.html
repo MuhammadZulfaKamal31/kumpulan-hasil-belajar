@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            width: 70%;
+            margin: 10% auto;
+        }
+
+        .icon {
+            border: 1px solid black;
+            background-color: darkblue;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #darkmode {
+            background-color: black;
+            color: white;
+        }
+
+        #darkmode button {
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Dark Mode</h1>
+    <h2>Follow us @AfluzLeveling</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit numquam voluptas quaerat iusto voluptatibus
+        veritatis odio. Modi quod, commodi voluptates nemo recusandae eum saepe ea, beatae possimus id assumenda.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt nostrum neque assumenda? Quibusdam iste
+        excepturi velit, corporis esse itaque voluptates nesciunt qui, ipsam perferendis, nam facere hic dolore dolores
+        architecto.
+    </p>
+    <button>AfluzLeveling</button>
+    <br>
+    <h3>Mode</h3>
+    <p><a href="#">
+            <span class="icon" onclick="setDarkMode(true)">DARK</span>
+            <span class="icon" onclick="setDarkMode(false)">LIGHT</span>
+        </a>
+    </p>
+    <script>
+        if (localStorage.getItem("theme") == 'dark') { setDarkMode(true) }
+
+        function setDarkMode(isDark) {
+            if (isDark) {
+                document.body.setAttribute('id', 'darkmode')
+                localStorage.setItem('theme', 'dark')
+            }
+            else {
+                document.body.setAttribute('id', '')
+                localStorage.removeItem('theme')
+
+            }
+        }
+    </script>
+</body>
+
+</html>
