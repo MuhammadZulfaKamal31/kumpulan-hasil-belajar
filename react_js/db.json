@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "product1",
+      "price": 899
+    },
+    {
+      "id": 2,
+      "title": "product2",
+      "price": 788
+    },
+    {
+      "title": "ereafdsaggsg",
+      "price": 677,
+      "id": 3
+    },
+    {
+      "title": "hai",
+      "price": "23",
+      "id": 4
+    }
+  ]
+}
